@@ -77,7 +77,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
+        <CompanyLogos className="hidden relative z-10 mt-14 lg:block" />
       </div>
     </Section>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+// Removed unused import statement for React
 import Section from "./Section";
 import { socials } from "../constants";
 
@@ -7,7 +7,8 @@ const Footer = () => {
     <Section className="!px-0 !py-10">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <p className="caption text-n-4 lg:block">
-          Canary Code © {new Date().getFullYear()}. All rights reserved.
+          Canary Code © {new Date().getFullYear()}. All rights reserved. For
+          Creative Purposes Only. The coin is not real.
         </p>
 
         <ul className="flex gap-5 flex-wrap">

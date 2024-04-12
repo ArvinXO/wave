@@ -7,7 +7,12 @@ import gradient from "./gradient.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
-import yourlogo from "./yourlogo.svg";
+import eth from "./eth.svg";
+import uni from "./uni.svg";
+import bitcoin from "./bitcoin.svg";
+import coinbase from "./coinbase.svg";
+import binance from "./binance.svg";
+
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
@@ -49,11 +54,6 @@ import roadmap3 from "./roadmap/image-3.png";
 import roadmap4 from "./roadmap/image-4.png";
 import undone from "./roadmap/undone.svg";
 
-import notification1 from "./notification/image-1.png";
-import notification2 from "./notification/image-2.png";
-import notification3 from "./notification/image-3.png";
-import notification4 from "./notification/image-4.png";
-
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
 import benefitCard3 from "./benefits/card-3.svg";
@@ -82,7 +82,11 @@ export {
   play,
   gradient,
   grid,
-  yourlogo,
+  eth,
+  uni,
+  bitcoin,
+  coinbase,
+  binance,
   homeSmile,
   file02,
   searchMd,
@@ -118,10 +122,6 @@ export {
   roadmap3,
   roadmap4,
   undone,
-  notification1,
-  notification2,
-  notification3,
-  notification4,
   benefitCard1,
   benefitCard2,
   benefitCard3,

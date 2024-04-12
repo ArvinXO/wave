@@ -14,9 +14,6 @@ import {
   framer,
   homeSmile,
   instagram,
-  notification2,
-  notification3,
-  notification4,
   notion,
   photoshop,
   plusSquare,
@@ -31,7 +28,11 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
+  eth,
+  uni,
+  bitcoin,
+  coinbase,
+  binance,
 } from "../assets";
 
 export const navigation = [
@@ -123,9 +124,8 @@ export const benefits = [
     imageUrl: coinBox,
   },
 ];
-export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [binance, eth, uni, coinbase, bitcoin];
 
 export const brainwaveServices = [
   "Secure",
@@ -214,9 +214,9 @@ export const collabApps = [
 export const airdrops = [
   {
     id: "0",
-    title: "Basic",
+    title: "Explorer",
     description: "Start your journey with Orbital Token and earn rewards!",
-    price: "0",
+    apy_percentage: "5",
     apy: "Earn ORB rewards equivalent to $0 investment",
     features: [
       "Access to the Orbital Token ecosystem",
@@ -226,9 +226,9 @@ export const airdrops = [
   },
   {
     id: "1",
-    title: "Premium",
+    title: "Voyager",
     description: "Upgrade to Premium and maximize your ORB earnings!",
-    price: "9.99",
+    apy_percentage: "20",
     apy: "Earn ORB rewards equivalent to $9.99 per month",
     features: [
       "Advanced features for enhanced ORB rewards",
@@ -238,10 +238,10 @@ export const airdrops = [
   },
   {
     id: "2",
-    title: "Enterprise",
+    title: "Pioneer",
     description: "Unlock exclusive APY rates and scale your ORB rewards!",
     apy: "Contact us for exclusive APY rates",
-    price: null,
+    apy_percentage: "30*",
     features: [
       "Customized solutions for maximum ORB rewards",
       "Dedicated support for your ORB journey",
