@@ -34,6 +34,9 @@ const Hero = () => {
 =======
 
         <CompanyLogos className="hidden relative z-10 mt-14 lg:block" />
+<<<<<<< HEAD
+>>>>>>> df33a36 (Add partner logos, clean up props)
+=======
 >>>>>>> df33a36 (Add partner logos, clean up props)
       </div>
       <CompanyLogos className="hidden relative z-10 mt-14 lg:block" />

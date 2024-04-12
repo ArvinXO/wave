@@ -117,6 +117,11 @@ export const benefits = [
   },
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+export const companyLogos = [binance, eth, uni, coinbase, bitcoin];
+>>>>>>> df33a36 (Add partner logos, clean up props)
 =======
 
 export const companyLogos = [binance, eth, uni, coinbase, bitcoin];
@@ -224,7 +229,11 @@ export const airdrops = [
     title: "Voyager",
     description: "Upgrade to Premium and maximize your ORB earnings!",
 <<<<<<< HEAD
+<<<<<<< HEAD
     apy_percentage: "15",
+=======
+    apy_percentage: "20",
+>>>>>>> df33a36 (Add partner logos, clean up props)
 =======
     apy_percentage: "20",
 >>>>>>> df33a36 (Add partner logos, clean up props)
@@ -241,7 +250,11 @@ export const airdrops = [
     description: "Unlock exclusive APY rates and scale your ORB rewards!",
     apy: "Contact us for exclusive APY rates",
 <<<<<<< HEAD
+<<<<<<< HEAD
     apy_percentage: "30",
+=======
+    apy_percentage: "30*",
+>>>>>>> df33a36 (Add partner logos, clean up props)
 =======
     apy_percentage: "30*",
 >>>>>>> df33a36 (Add partner logos, clean up props)

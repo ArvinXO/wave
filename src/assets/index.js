@@ -6,8 +6,11 @@ import gradient from "./gradient.png";
 import grid from "./grid.png";
 import loading1 from "./loading-01.svg";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import mdiorbit from "./mdi-orbit.svg";
 
+=======
+>>>>>>> df33a36 (Add partner logos, clean up props)
 =======
 >>>>>>> df33a36 (Add partner logos, clean up props)
 import eth from "./eth.svg";
@@ -17,7 +20,10 @@ import coinbase from "./coinbase.svg";
 import binance from "./binance.svg";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> df33a36 (Add partner logos, clean up props)
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
@@ -90,7 +96,10 @@ export {
   coinbase,
   binance,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> df33a36 (Add partner logos, clean up props)
   homeSmile,
   file02,
   searchMd,
