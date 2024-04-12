@@ -2,9 +2,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind CSS */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom CSS */
+@layer utilities {
+  .active-nav-item {
+    @apply text-white bg-purple-800 opacity-90; /* Define your desired style for the active navigation item */
+  }
+
+  .inactive-nav-item {
+    @apply text-n-1/50; /* Define your desired style for the inactive navigation items */
+  }
+}
+
+/* Apply gradient transition effect to the button */
+.button {
+  @apply relative overflow-hidden bg-indigo-600 text-white py-2 px-4 rounded-lg cursor-pointer;
+}
+
+.border-button {
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.border-button::before,
+.border-button::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      rgb(174, 106, 255),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgb(85, 1, 97),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: left 0.4s;
+}
+
+.border-button:hover::before,
+.border-button:hover::after {
+  left: 0;
+}
 
 :root {
   --font-sora: "Sora", sans-serif;
