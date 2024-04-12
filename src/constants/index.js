@@ -116,6 +116,11 @@ export const benefits = [
     imageUrl: coinBox,
   },
 ];
+<<<<<<< HEAD
+=======
+
+export const companyLogos = [binance, eth, uni, coinbase, bitcoin];
+>>>>>>> df33a36 (Add partner logos, clean up props)
 
 export const brainwaveServices = [
   "Secure",
@@ -218,7 +223,11 @@ export const airdrops = [
     id: "1",
     title: "Voyager",
     description: "Upgrade to Premium and maximize your ORB earnings!",
+<<<<<<< HEAD
     apy_percentage: "15",
+=======
+    apy_percentage: "20",
+>>>>>>> df33a36 (Add partner logos, clean up props)
     apy: "Earn ORB rewards equivalent to $9.99 per month",
     features: [
       "Advanced features for enhanced ORB rewards",
@@ -231,7 +240,11 @@ export const airdrops = [
     title: "Pioneer",
     description: "Unlock exclusive APY rates and scale your ORB rewards!",
     apy: "Contact us for exclusive APY rates",
+<<<<<<< HEAD
     apy_percentage: "30",
+=======
+    apy_percentage: "30*",
+>>>>>>> df33a36 (Add partner logos, clean up props)
     features: [
       "Customized solutions for maximum ORB rewards",
       "Dedicated support for your ORB journey",

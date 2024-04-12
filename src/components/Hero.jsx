@@ -30,6 +30,11 @@ const Hero = () => {
             importance="high"
           />
         </div>
+<<<<<<< HEAD
+=======
+
+        <CompanyLogos className="hidden relative z-10 mt-14 lg:block" />
+>>>>>>> df33a36 (Add partner logos, clean up props)
       </div>
       <CompanyLogos className="hidden relative z-10 mt-14 lg:block" />
     </Section>

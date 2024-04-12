@@ -5,14 +5,25 @@ import play from "./play.svg";
 import gradient from "./gradient.png";
 import grid from "./grid.png";
 import loading1 from "./loading-01.svg";
+<<<<<<< HEAD
 import mdiorbit from "./mdi-orbit.svg";
 
+=======
+>>>>>>> df33a36 (Add partner logos, clean up props)
 import eth from "./eth.svg";
 import uni from "./uni.svg";
 import bitcoin from "./bitcoin.svg";
 import coinbase from "./coinbase.svg";
 import binance from "./binance.svg";
 
+<<<<<<< HEAD
+=======
+import homeSmile from "./home-smile.svg";
+import file02 from "./file-02.svg";
+import searchMd from "./search-md.svg";
+import plusSquare from "./plus-square.svg";
+import disc02 from "./disc-02.svg";
+>>>>>>> df33a36 (Add partner logos, clean up props)
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
@@ -78,6 +89,14 @@ export {
   bitcoin,
   coinbase,
   binance,
+<<<<<<< HEAD
+=======
+  homeSmile,
+  file02,
+  searchMd,
+  plusSquare,
+  disc02,
+>>>>>>> df33a36 (Add partner logos, clean up props)
   chromecast,
   sliders04,
   loading,
