@@ -7,17 +7,13 @@ import gradient from "./gradient.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
+
 import eth from "./eth.svg";
 import uni from "./uni.svg";
 import bitcoin from "./bitcoin.svg";
 import coinbase from "./coinbase.svg";
 import binance from "./binance.svg";
 
-import homeSmile from "./home-smile.svg";
-import file02 from "./file-02.svg";
-import searchMd from "./search-md.svg";
-import plusSquare from "./plus-square.svg";
-import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
@@ -87,11 +83,6 @@ export {
   bitcoin,
   coinbase,
   binance,
-  homeSmile,
-  file02,
-  searchMd,
-  plusSquare,
-  disc02,
   chromecast,
   sliders04,
   loading,

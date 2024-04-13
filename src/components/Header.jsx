@@ -59,13 +59,13 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <a className="block w-[12rem] xl:mr-8 lg:mr-0" href="#hero">
           <img src={wave} width={94} height={40} alt="Wave logo" />
         </a>
 
         <nav
           className={`${
-            openNavigation ? "flex" : "hidden"
+            openNavigation ? "flex justify-center items-center" : "hidden"
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-3 flex flex-col items-center justify-center m-auto lg:flex-row">
@@ -76,7 +76,7 @@ const Header = () => {
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-lg lg:font-semibold ${
+                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-lg lg:font-semibold  ${
                   (item.url === pathname.hash && pathname.hash !== "") ||
                   item.url === `#${activeSection}`
                     ? "active-nav-item" // Apply 'active-nav-item' class for highlighting
@@ -90,7 +90,7 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <div className="ml-auto hidden lg:flex ">
+        <div className="hidden justify-end lg:flex ">
           <button
             onClick={() => {
               window.location.href = "#signup";
@@ -106,7 +106,7 @@ const Header = () => {
             }}
             className="button text-base border-button hover:text-n-1 relative bg-gradient-to-br from-purple-800 to-transparent border-2 border-white text-white py-2 px-4 rounded-lg shadow-lg"
           >
-            <span className="z-10 relative">Sign in</span>
+            <span className="z-10 relative justify-end">Sign in</span>
             <span className="absolute top-0 left-0 w-full h-full bg-white opacity-20 rounded-lg z-0"></span>
           </button>
         </div>

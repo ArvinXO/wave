@@ -4,28 +4,21 @@ import {
   benefitIcon3,
   benefitIcon4,
   coinBox,
-  chromecast,
-  disc02,
   discord,
   discordBlack,
   facebook,
   figma,
-  file02,
   framer,
-  homeSmile,
   instagram,
   notion,
   photoshop,
-  plusSquare,
   protopie,
   raindrop,
   roadmap1,
   roadmap2,
   roadmap3,
   roadmap4,
-  searchMd,
   slack,
-  sliders04,
   telegram,
   twitter,
   eth,
@@ -48,7 +41,7 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "airdrops",
+    title: "Airdrops",
     url: "#airdrops",
   },
   {
@@ -69,8 +62,7 @@ export const navigation = [
     onlyMobile: true,
   },
 ];
-
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+export const companyLogos = [binance, eth, uni, coinbase, bitcoin];
 
 export const benefits = [
   {
@@ -124,8 +116,6 @@ export const benefits = [
     imageUrl: coinBox,
   },
 ];
-
-export const companyLogos = [binance, eth, uni, coinbase, bitcoin];
 
 export const brainwaveServices = [
   "Secure",
@@ -228,7 +218,7 @@ export const airdrops = [
     id: "1",
     title: "Voyager",
     description: "Upgrade to Premium and maximize your ORB earnings!",
-    apy_percentage: "20",
+    apy_percentage: "15",
     apy: "Earn ORB rewards equivalent to $9.99 per month",
     features: [
       "Advanced features for enhanced ORB rewards",
@@ -241,7 +231,7 @@ export const airdrops = [
     title: "Pioneer",
     description: "Unlock exclusive APY rates and scale your ORB rewards!",
     apy: "Contact us for exclusive APY rates",
-    apy_percentage: "30*",
+    apy_percentage: "30",
     features: [
       "Customized solutions for maximum ORB rewards",
       "Dedicated support for your ORB journey",
@@ -249,7 +239,6 @@ export const airdrops = [
     ],
   },
 ];
-export const brainwaveServicesIcons = [disc02, chromecast, sliders04];
 
 export const roadmap = [
   {

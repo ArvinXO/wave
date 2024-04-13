@@ -1,4 +1,7 @@
+import PropTypes from "prop-types";
+
 const MenuSvg = ({ openNavigation }) => {
+  // Component code here
   return (
     <svg
       className="overflow-visible"
@@ -26,6 +29,10 @@ const MenuSvg = ({ openNavigation }) => {
       />
     </svg>
   );
+};
+
+MenuSvg.propTypes = {
+  openNavigation: PropTypes.bool.isRequired,
 };
 
 export default MenuSvg;
