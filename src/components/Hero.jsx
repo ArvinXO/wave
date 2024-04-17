@@ -6,6 +6,8 @@ import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import CompanyLogos from "./CompanyLogos";
 import CapNotification from "./Capnotification";
+import SparklesCore from "./design/Sparkle";
+import { Custom_B } from "./design/Custom_Button";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -15,6 +17,7 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
+            <SparklesCore></SparklesCore>
             Orbital Token: Ignite Your Exploration {` `}
             {/* <span className="inline-block relative">
               Brainwave{" "}
@@ -30,7 +33,9 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Maximize productivity. Ride the orbital wave. Start now.
           </p>
-          <GradientButton href="/your-link">Get Started</GradientButton>
+          <Custom_B className="hidden md:inline-block" href="#signup">
+            <h1 className="h6 text-center">EXPLORE</h1>
+          </Custom_B>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-34">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">

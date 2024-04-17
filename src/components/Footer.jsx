@@ -10,7 +10,6 @@ const Footer = () => {
           Canary Code © {new Date().getFullYear()}. All rights reserved. For
           Creative Purposes Only. The coin is not real.
         </p>
-
         <ul className="flex gap-5 flex-wrap">
           {socials.map((item) => (
             <a

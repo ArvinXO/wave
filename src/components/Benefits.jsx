@@ -1,11 +1,23 @@
+import { useState } from "react";
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import { Meteors } from "./design/Meteor";
 
 const Benefits = () => {
+  const [activeCard, setActiveCard] = useState(null);
+
+  const handleMouseEnter = (id) => {
+    setActiveCard(id);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveCard(null);
+  };
+
   return (
     <Section id="decentralization">
       <div className="container relative z-2">
@@ -22,8 +34,17 @@ const Benefits = () => {
                 backgroundImage: `url(${item.backgroundUrl})`,
               }}
               key={item.id}
+              onMouseEnter={() => handleMouseEnter(item.id)}
+              onMouseLeave={handleMouseLeave}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+                {activeCard === item.id && (
+                  <Meteors
+                    number={20}
+                    position={{ x: 0, y: 0 }} // Adjust these values according to your layout
+                  />
+                )}
+
                 <h5 className="h5 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 <div className="flex items-center mt-auto">
@@ -46,17 +67,7 @@ const Benefits = () => {
                 className="absolute inset-0.5 bg-n-8 rounded-[2rem] transition-transform hover:scale-105"
                 style={{ clipPath: "url(#benefits)" }}
               >
-                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-5">
-                  {item.imageUrl && (
-                    <img
-                      src={item.imageUrl}
-                      width={380}
-                      height={362}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                    />
-                  )}
-                </div>
+                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-5"></div>
               </div>
 
               <ClipPath />
