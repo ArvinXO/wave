@@ -35,12 +35,12 @@ const PricingList = () => {
             href={
               item.apy_percentage
                 ? "/pricing"
-                : "mailto:teymouri.arvin@gmail.com"
+                : "$mailto:teymouri.arvin@gmail.com"
             }
+            white={!!item.apy_percentage}
           >
             {item.apy_percentage < 30 ? "Get started" : "Contact us"}
           </GradientButton>
-
           {item.apy}
 
           <ul>
