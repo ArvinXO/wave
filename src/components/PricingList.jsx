@@ -1,4 +1,4 @@
-import { check } from "../assets";
+import { mdiorbit } from "../assets";
 import { airdrops } from "../constants";
 import GradientButton from "./Button";
 
@@ -49,7 +49,7 @@ const PricingList = () => {
                 key={index}
                 className="flex items-start py-5 border-t border-n-6"
               >
-                <img src={check} width={24} height={24} alt="Check" />
+                <img src={mdiorbit} width={24} height={24} alt="Check" />
                 <p className="body-2 ml-4">{feature}</p>
               </li>
             ))}

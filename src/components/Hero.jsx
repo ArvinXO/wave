@@ -1,6 +1,5 @@
 import { gradient, token } from "../assets";
 import Section from "./Section";
-import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import CompanyLogos from "./CompanyLogos";
 import CapNotification from "./Capnotification";
@@ -32,30 +31,26 @@ const Hero = () => {
               loading="lazy"
               className="w-full h-auto md:w-auto md:h-auto max-w-[650px] mx-auto" // Set maximum width and center the image
               alt="token"
+              decoding="async"
+              importance="high"
             />
           </div>
 
-          <ScrollParallax isAbsolutelyPositioned>
-            <CapNotification
-              className="hidden absolute -left-[.2rem] bottom-[36rem] w-[25rem] xl:flex"
-              title="Staking Rewards "
-              subtitle={"Earn up to 20% APY"}
-            />
-          </ScrollParallax>
-          <ScrollParallax isAbsolutelyPositioned>
-            <CapNotification
-              className="hidden absolute -right-[.0rem] bottom-[36rem] w-[20rem] xl:flex"
-              title="Supply Cap "
-              subtitle={"100,000,000 ORB"}
-            />
-          </ScrollParallax>
-          <ScrollParallax isAbsolutelyPositioned>
-            <CapNotification
-              className="hidden absolute -left-[-29rem] bottom-[4rem] w-[30rem] xl:flex"
-              title="Community Governance"
-              subtitle={"Vote on proposals"}
-            />
-          </ScrollParallax>
+          <CapNotification
+            className="hidden absolute -left-[.2rem] bottom-[36rem] w-[25rem] xl:flex"
+            title="Staking Rewards "
+            subtitle={"Earn up to 20% APY"}
+          />
+          <CapNotification
+            className="hidden absolute -right-[.0rem] bottom-[36rem] w-[20rem] xl:flex"
+            title="Supply Cap "
+            subtitle={"100,000,000 ORB"}
+          />
+          <CapNotification
+            className="hidden absolute -left-[-29rem] bottom-[4rem] w-[28rem] xl:flex"
+            title="Community Governance"
+            subtitle={"Vote on proposals"}
+          />
         </div>
         <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[208%] lg:-top-[104%] opacity-10">
           <img src={gradient} className="w-full" alt="hero" />
