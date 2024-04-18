@@ -1,7 +1,5 @@
 import { gradient, token } from "../assets";
-import GradientButton from "./Button";
 import Section from "./Section";
-import { Gradient } from "./design/Hero";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import CompanyLogos from "./CompanyLogos";
@@ -13,7 +11,7 @@ const Hero = () => {
   const parallaxRef = useRef(null);
 
   return (
-    <Section className="pt-[12rem] -mt-[6.25rem]" customPaddings id="hero">
+    <Section className="pt-[8rem] -mt-[6.25rem]" customPaddings id="hero">
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
@@ -37,53 +35,43 @@ const Hero = () => {
             <h1 className="h6 text-center">EXPLORE</h1>
           </Custom_B>
         </div>
-        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-34">
-          <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
-            <div className="relative bg-n-8 rounded-[1rem]">
-              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-
-              <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-                <img
-                  src={token}
-                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]   "
-                  width={1024}
-                  height={490}
-                  alt="token"
-                />
-                <ScrollParallax isAbsolutelyPositioned>
-                  <CapNotification
-                    className="hidden absolute -left-[7.5rem] bottom-[16rem] w-[18rem] xl:flex"
-                    title="Staking Rewards "
-                    subtitle={"Earn up to 20% APY"}
-                  />
-                </ScrollParallax>
-
-                <ScrollParallax isAbsolutelyPositioned>
-                  <CapNotification
-                    className="hidden absolute -right-[7.5rem] bottom-[26rem] w-[18rem] xl:flex"
-                    title="Supply Cap "
-                    subtitle={"100,000,000 ORB"}
-                  />
-                </ScrollParallax>
-
-                <ScrollParallax isAbsolutelyPositioned>
-                  <CapNotification
-                    className="hidden absolute -right-[7.5rem] bottom-[6rem] w-[18rem] xl:flex"
-                    title="Community Governance"
-                  />
-                </ScrollParallax>
-              </div>
-            </div>
-
-            <Gradient />
+        <div className="flex justify-center items-center h-[200px] md:h-auto">
+          <div className="aspect-[33/37] overflow-hidden md:aspect-[188/210]">
+            <img
+              src={token}
+              className="w-full h-auto md:w-auto md:h-auto max-w-[650px] mx-auto" // Set maximum width and center the image
+              alt="token"
+            />
           </div>
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[208%] lg:-top-[104%] opacity-25">
-            <img src={gradient} className="w-full" alt="hero" />
-          </div>
+
+          <ScrollParallax isAbsolutelyPositioned>
+            <CapNotification
+              className="hidden absolute -left-[.2rem] bottom-[36rem] w-[25rem] xl:flex"
+              title="Staking Rewards "
+              subtitle={"Earn up to 20% APY"}
+            />
+          </ScrollParallax>
+          <ScrollParallax isAbsolutelyPositioned>
+            <CapNotification
+              className="hidden absolute -right-[.0rem] bottom-[36rem] w-[20rem] xl:flex"
+              title="Supply Cap "
+              subtitle={"100,000,000 ORB"}
+            />
+          </ScrollParallax>
+          <ScrollParallax isAbsolutelyPositioned>
+            <CapNotification
+              className="hidden absolute -left-[-29rem] bottom-[4rem] w-[30rem] xl:flex"
+              title="Community Governance"
+              subtitle={"Vote on proposals"}
+            />
+          </ScrollParallax>
         </div>
-
-        <CompanyLogos className="hidden relative z-10 mt-14 lg:block" />
+        <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[208%] lg:-top-[104%] opacity-10">
+          <img src={gradient} className="w-full" alt="hero" />
+        </div>
       </div>
+
+      <CompanyLogos className="hidden relative z-10 mt-14 lg:block" />
     </Section>
   );
 };

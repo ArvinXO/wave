@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import brackets from "../assets/svg/Brackets";
 
 const TagLine = ({ className, children }) => {
@@ -8,6 +9,11 @@ const TagLine = ({ className, children }) => {
       {brackets("right")}
     </div>
   );
+};
+
+TagLine.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default TagLine;

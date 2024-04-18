@@ -7,6 +7,7 @@ import gradient from "./gradient.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
+import mdiorbit from "./mdi-orbit.svg";
 
 import eth from "./eth.svg";
 import uni from "./uni.svg";
@@ -20,7 +21,7 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import token from "./hero/token.jpg";
+import token from "./hero/token.png";
 import heroBackground from "./hero/hero-background.svg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -70,6 +71,7 @@ import twitter from "./socials/twitter.svg";
 
 export {
   wave,
+  mdiorbit,
   check,
   check2,
   loading1,

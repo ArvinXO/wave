@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1, service2, service3, check } from "../assets";
+import { service1, service2, service3, mdiorbit } from "../assets";
 import { brainwaveServices } from "../constants";
 import { Gradient } from "./design/Services";
 
@@ -35,7 +35,12 @@ const Services = () => {
                     key={index}
                     className="flex items-start px-1 py-4 border-t border-n-6"
                   >
-                    <img width={24} height={24} src={check} alt="Checkmark" />
+                    <img
+                      width={24}
+                      height={24}
+                      src={mdiorbit}
+                      alt="Checkmark"
+                    />
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
