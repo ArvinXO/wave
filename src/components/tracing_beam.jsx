@@ -36,7 +36,7 @@ const TracingBeam = ({ children, className }) => {
 
   return (
     <motion.div ref={ref} className={cn("mx-auto h-full", className)}>
-      <div className="absolute -left-6 md:-left-50 top-3">
+      <div className="absolute -left-0 md:-left-50 top-3">
         <motion.div
           transition={{
             duration: 0.2,
@@ -112,7 +112,7 @@ const TracingBeam = ({ children, className }) => {
           </defs>
         </svg>
       </div>
-      <div className="absolute -right-6 md:-right-50 top-3">
+      <div className="absolute -right-0 md:-right-50 top-3">
         <motion.div
           transition={{
             duration: 0.2,
