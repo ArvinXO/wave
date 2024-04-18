@@ -1,5 +1,4 @@
-"use client";
-import { cn } from "../../utils/cn";
+import { cn } from "@/utils/cn";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -29,6 +28,7 @@ const AuroraBackground = ({ className, children }) => {
     const willChange = `transform`;
 
     return cn(
+      "z-8",
       "absolute inset-0 ", // Adjust z-index to ensure it overlays everything
       className,
       `

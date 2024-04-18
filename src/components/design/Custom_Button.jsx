@@ -1,11 +1,5 @@
-import { useRef } from "react";
-import {
-  motion,
-  useAnimationFrame,
-  useMotionTemplate,
-  useMotionValue,
-  useTransform,
-} from "framer-motion";
+import { useRef, useEffect } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import { cn } from "@/utils/cn";
 
 import PropTypes from "prop-types";
@@ -25,7 +19,8 @@ export function Custom_B({
       className={cn(
         "relative transition-colors hover:text-color-5 text-white py-3 px-4 rounded-lg shadow-lg bg-gradient-to-br from-purple-800 to-transparent",
         "opacity-0 md:opacity-100",
-        containerClassName
+        containerClassName,
+        className // Added className here
       )}
       style={{
         borderRadius: borderRadius,
@@ -47,7 +42,7 @@ export function Custom_B({
       </div>
 
       <div
-        className={cn(" justify-center rounded-lg ", className)}
+        className="justify-center rounded-lg" // Removed redundant cn() here
         style={{
           borderRadius: `calc(${borderRadius} * 0.96)`,
         }}
@@ -68,13 +63,14 @@ export const MovingBorder = ({
   const pathRef = useRef();
   const progress = useMotionValue(0);
 
-  useAnimationFrame((time) => {
+  useEffect(() => {
     const length = pathRef.current?.getTotalLength();
     if (length) {
       const pxPerMillisecond = length / duration;
+      const time = performance.now();
       progress.set((time * pxPerMillisecond) % length);
     }
-  });
+  }, [duration, progress]);
 
   const x = useTransform(
     progress,
@@ -85,7 +81,11 @@ export const MovingBorder = ({
     (val) => pathRef.current?.getPointAtLength(val).y
   );
 
-  const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
+  const transform = useTransform(
+    [x, y], // Modified to use array syntax
+    (x, y) =>
+      `translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`
+  );
 
   return (
     <>
@@ -127,6 +127,7 @@ MovingBorder.propTypes = {
   rx: PropTypes.string,
   ry: PropTypes.string,
 };
+
 Custom_B.propTypes = {
   borderRadius: PropTypes.string,
   children: PropTypes.node,
@@ -134,5 +135,5 @@ Custom_B.propTypes = {
   containerClassName: PropTypes.string,
   borderClassName: PropTypes.string,
   duration: PropTypes.number,
-  className: PropTypes.string,
+  className: PropTypes.string, // Added prop type for className
 };

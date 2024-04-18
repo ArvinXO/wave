@@ -1,5 +1,3 @@
-import SectionSvg from "../assets/svg/SectionSvg";
-
 import PropTypes from "prop-types";
 
 const Section = ({ className, id, children, customPaddings }) => {
@@ -8,12 +6,10 @@ const Section = ({ className, id, children, customPaddings }) => {
       id={id}
       className={`
       relative 
-      ${customPaddings || `py-10 lg:py-16 xl:py-20 : ""}`} 
+      ${customPaddings || `py-10 lg:py-16 xl:py-20`} 
       ${className || ""}`}
     >
       {children}
-
-      <SectionSvg />
     </div>
   );
 };

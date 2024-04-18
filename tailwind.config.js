@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 const {
@@ -19,12 +18,8 @@ export default {
       },
       keyframes: {
         aurora: {
-          from: {
-            backgroundPosition: "50% 50%, 50% 50%",
-          },
-          to: {
-            backgroundPosition: "350% 50%, 350% 50%",
-          },
+          from: { backgroundPosition: "50% 50%, 50% 50%" },
+          to: { backgroundPosition: "350% 50%, 350% 50%" },
         },
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
@@ -109,9 +104,8 @@ export default {
     },
   },
   plugins: [
-    plugin(function ({ addBase, theme, addComponents, addUtilities }) {
-      // Include 'theme' here
-      addVariablesForColors({ addBase, theme }); // Pass 'theme' here
+    plugin(({ addBase, theme, addComponents, addUtilities }) => {
+      addVariablesForColors({ addBase, theme });
       addBase({});
       addComponents({
         ".container": {
@@ -169,8 +163,8 @@ export default {
 };
 
 function addVariablesForColors({ addBase, theme }) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
 
