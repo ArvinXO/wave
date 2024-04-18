@@ -17,16 +17,6 @@ const Hero = () => {
           <h1 className="h1 mb-6">
             <SparklesCore></SparklesCore>
             Orbital Token: Ignite Your Exploration {` `}
-            {/* <span className="inline-block relative">
-              Brainwave{" "}
-              <img
-                src={curve}
-                className="absolute top-full left-0 w-full xl:-mt-2"
-                width={624}
-                height={28}
-                alt="Curve"
-              />
-            </span> */}
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Maximize productivity. Ride the orbital wave. Start now.
@@ -39,6 +29,7 @@ const Hero = () => {
           <div className="aspect-[33/3] overflow-hidden md:aspect-[188/210]">
             <img
               src={token}
+              loading="lazy"
               className="w-full h-auto md:w-auto md:h-auto max-w-[650px] mx-auto" // Set maximum width and center the image
               alt="token"
             />
