@@ -7,7 +7,7 @@ import { Gradient } from "./design/Services";
 const Services = () => {
   return (
     <Section id="wallet">
-      <div className="container">
+      <div className="container ">
         <Heading
           title="Next-Gen Wallet"
           text="The most secure and user-friendly wallet for all your digital assets."

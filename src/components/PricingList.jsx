@@ -37,10 +37,10 @@ const PricingList = () => {
                 ? "/pricing"
                 : "mailto:teymouri.arvin@gmail.com"
             }
-            white={!!item.apy_percentage}
           >
-            {item.price ? "Get started" : "Contact us"}
+            {item.apy_percentage < 30 ? "Get started" : "Contact us"}
           </GradientButton>
+
           {item.apy}
 
           <ul>
