@@ -8,7 +8,6 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 import AuroraBackground from "./components/design/Aurora";
 import TracingBeam from "./components/design/tracing_beam";
-import { Analytics } from "@vercel/analytics/react";
 const App = () => {
   return (
     <>
@@ -25,7 +24,6 @@ const App = () => {
           <Footer />
         </TracingBeam>
       </div>
-      <Analytics />
     </>
   );
 };

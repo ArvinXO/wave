@@ -36,7 +36,7 @@ const Hero = () => {
           </Custom_B>
         </div>
         <div className="flex justify-center items-center h-[200px] md:h-auto">
-          <div className="aspect-[33/37] overflow-hidden md:aspect-[188/210]">
+          <div className="aspect-[33/3] overflow-hidden md:aspect-[188/210]">
             <img
               src={token}
               className="w-full h-auto md:w-auto md:h-auto max-w-[650px] mx-auto" // Set maximum width and center the image
